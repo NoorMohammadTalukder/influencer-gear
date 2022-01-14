@@ -1,0 +1,125 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common styles */
+
+nav {
+    font-size: 24px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: aqua; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* journies style */
+
+.title {
+    font-size: 52px;
+}
+
+.journy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    /* background-color: beige; */
+    padding: 10px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #E02C6D;
+    border-radius: 20px;
+    padding: 10px 24px;
+    color: white;
+    font-size: 16px;
+}
+
+.journy-pic img {
+    padding-left: 250px;
+    width: 440px;
+    height: 414px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+
+/* collections style */
+
+.popular-collection {
+    width: 1047px;
+    height: 1600px;
+    /* background-color: blue; */
+    margin-top: 20px;
+}
+
+.top-collection h2 {
+    text-align: center;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.collection {
+    background-color: white;
+    box-shadow: 10px 10px 71px gray;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: 10px 10px 71px gray;
+}
+
+.collection img {
+    border-radius: 5px;
+}
+
+.filled {
+    color: #FFC014;
+}
+
+.product-buttons {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.product-button {
+    text-decoration: none;
+    color: #E02C6D;
+}
+
+
+/* reviews style started */
+
+.gadget-review {
+    margin-top: 100px;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* footer */
+
+.footer-elements {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.icon {
+    padding: 10px;
+    font-size: 20px;
+}
