@@ -113,7 +113,7 @@ main {
 
 /* footer */
 
-.footer-elements {
+footer {
     background-color: black;
     color: white;
     text-align: center;
@@ -122,4 +122,78 @@ main {
 .icon {
     padding: 10px;
     font-size: 20px;
+}
+
+
+/*----------------------
+   Media Queries 
+ ----------------------*/
+
+
+/* Mobile devices */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+    .journy,
+    .collections,
+    .review {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        /* background-color: beige; */
+        padding: 10px;
+    }
+    .journy-pic img {
+        padding-left: 0px;
+        width: 440px;
+        height: 414px;
+    }
+    .reviews {
+        margin-top: 3100px;
+    }
+    /* footer {
+        width: 375px;
+    } */
+    .footer-elements {
+        width: 600px;
+        background-color: black;
+    }
+}
+
+
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .journy,
+    .collections,
+    .review {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        /* background-color: beige; */
+        padding: 10px;
+    }
+    .journy-pic img {
+        padding-left: 0px;
+        width: 440px;
+        height: 414px;
+    }
+    .reviews {
+        margin-top: 980px;
+    }
+    .review-video {
+        margin-right: 20px;
+    }
+    /* footer {
+    width: 375px;
+} */
+    .footer-elements {
+        width: 1000px;
+        background-color: black;
+    }
 }
