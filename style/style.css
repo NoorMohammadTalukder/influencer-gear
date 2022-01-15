@@ -45,7 +45,7 @@ main {
 
 .journy-pic img {
     padding-left: 250px;
-    /* width: 440px;
+    /* width: 300px;
     height: 414px; */
     /* padding-top: 10px;
     padding-bottom: 10px; */
@@ -105,6 +105,11 @@ main {
     margin-top: 100px;
 }
 
+.review-video {
+    text-align: center;
+    border-radius: 5px;
+}
+
 .review {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -141,9 +146,9 @@ footer {
     .review {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 30px;
+        /* grid-row-gap: 30px; */
         /* background-color: beige; */
-        padding: 10px;
+        /* padding: 10px; */
     }
     .journy-pic img {
         padding-left: 0px;
@@ -154,7 +159,7 @@ footer {
         margin-top: 3100px;
     }
     footer {
-        width: 360px;
+        width: 375px;
     }
     .footer-elements {
         width: 100%;
@@ -175,6 +180,7 @@ footer {
     .journy,
     .collections,
     .review {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
