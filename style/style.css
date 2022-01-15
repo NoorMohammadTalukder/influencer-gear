@@ -46,6 +46,13 @@ main {
 }
 
 
+/* transform */
+
+.journy-pic:hover {
+    transform: scale(1.5);
+}
+
+
 /* journies style */
 
 .title {
@@ -72,15 +79,6 @@ main {
 }
 
 
-/* .journy-pic img {
-    padding-left: 250px;
-    width: 300px;
-    height: 414px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-} */
-
-
 /* collections style */
 
 .popular-collection {
@@ -97,16 +95,17 @@ main {
 .collections {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .collection {
     background-color: white;
     box-shadow: 10px 10px 71px gray;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
-    padding-top: 10px;
+    padding-top: 20px;
     box-shadow: 10px 10px 71px gray;
+    border-radius: 5px;
 }
 
 .collection img {
@@ -164,52 +163,11 @@ footer {
  ----------------------*/
 
 
-/* Large screeb Mobile devices */
-
-@media only screen and (min-width:360px) and (max-width:688px) {
-    .container {
-        width: 100%;
-    }
-    .journy,
-    .collections,
-    .review {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* grid-row-gap: 30px; */
-        /* background-color: beige; */
-        /* padding: 10px; */
-    }
-    .journy-pic img {
-        padding-left: 0px;
-        width: 440px;
-        height: 414px;
-    }
-    .reviews {
-        margin-top: 2800px;
-    }
-    footer {
-        max-width: 638px;
-        ;
-    }
-    .footer-elements {
-        width: 100%;
-        background-color: black;
-    }
-}
-
-
-/* transform */
-
-.journy-pic:hover {
-    transform: scale(1.5);
-}
-
-
 /* Normal mobile devices */
 
-@media only screen and (max-width:380px) {
+@media only screen and (max-width:688px) {
     .container {
-        max-width: 379px;
+        max-width: 100%;
     }
     /* main {
         width: 100%;
@@ -217,18 +175,15 @@ footer {
     .journy,
     .collections,
     .review {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 370px;
-        /* grid-gap: 20px; */
-        /* grid-row-gap: 30px;
-        /* background-color: beige; */
-        /* padding: 10px;
-        */
+        /* width: 100%; */
+        /* display: grid; */
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2px;
     }
     .journy-pic img {
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 200px;
+        max-height: 200px;
     }
     .product-buttons {
         text-align: center;
@@ -236,12 +191,8 @@ footer {
     .reviews {
         margin-top: 3100px;
     }
-    footer {
-        width: max(359px);
-    }
-    .footer-elements {
-        width: 100%;
-        background-color: black;
+    body {
+        overflow-x: hidden;
     }
 }
 
@@ -272,11 +223,4 @@ footer {
     .review-video {
         margin-right: 20px;
     }
-    /* footer {
-    width: 375px;
-} */
-    /* .footer-elements {
-        width: 1000px;
-        background-color: black;
-    } */
 }
