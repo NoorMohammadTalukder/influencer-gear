@@ -45,11 +45,6 @@ main {
     }
 }
 
-.button {
-    animation: sliding 2s ease-in-out 0.5s infinite alternate;
-    animation-play-state: running;
-}
-
 
 /* journies style */
 
@@ -72,6 +67,8 @@ main {
     padding: 10px 24px;
     color: white;
     font-size: 16px;
+    animation: sliding 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
 }
 
 
@@ -201,11 +198,18 @@ footer {
 }
 
 
+/* transform */
+
+.journy-pic:hover {
+    transform: scale(1.5);
+}
+
+
 /* Normal mobile devices */
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:380px) {
     .container {
-        max-width: 360px;
+        max-width: 379px;
     }
     /* main {
         width: 100%;
@@ -215,15 +219,16 @@ footer {
     .review {
         width: 100%;
         display: grid;
-        grid-template-columns: 359px;
-        grid-gap: 20px;
+        grid-template-columns: 370px;
+        /* grid-gap: 20px; */
         /* grid-row-gap: 30px;
         /* background-color: beige; */
         /* padding: 10px;
         */
     }
     .journy-pic img {
-        max-width: 200px;
+        max-width: 100px;
+        max-height: 100px;
     }
     .product-buttons {
         text-align: center;
