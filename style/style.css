@@ -20,6 +20,37 @@ main {
 }
 
 
+/* Animation */
+
+@keyframes sliding {
+    0% {
+        transform: scale(1);
+        background-color: #FFC014;
+    }
+    25% {
+        transform: scale(2);
+        background-color: #E02C6D;
+    }
+    50% {
+        transform: scale(1);
+        background-color: #FFC014;
+    }
+    75% {
+        transform: scale(2);
+        background-color: #E02C6D;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #FFC014;
+    }
+}
+
+.button {
+    animation: sliding 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
+
+
 /* journies style */
 
 .title {
