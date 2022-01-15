@@ -156,10 +156,10 @@ footer {
     /* footer {
         width: 375px;
     } */
-    .footer-elements {
-        width: 600px;
+    /* .footer-elements {
+        width: 100%;
         background-color: black;
-    }
+    } */
 }
 
 
@@ -192,8 +192,8 @@ footer {
     /* footer {
     width: 375px;
 } */
-    .footer-elements {
+    /* .footer-elements {
         width: 1000px;
         background-color: black;
-    }
+    } */
 }
